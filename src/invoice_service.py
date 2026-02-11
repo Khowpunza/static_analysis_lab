@@ -131,4 +131,4 @@ class InvoiceService:
         if subtotal > 10000 and inv.membership not in self.MEMBERSHIP_DISCOUNT:
             warnings.append("Consider membership upgrade")
 
-        return total, warnings
+        return total, warning
